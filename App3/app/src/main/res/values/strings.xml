@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App check</string>
+    <string name="app_num1">Primer valor</string>
+    <string name="app_num2">Segundo valor</string>
+    <string name="app_sum">Suma</string>
+    <string name="app_res">Resta</string>
+    <string name="app_btncalcula">Calcular</string>
+    <string name="app_Salida">Resultado</string>
+</resources>
