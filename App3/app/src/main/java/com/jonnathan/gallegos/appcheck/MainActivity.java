@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,6 +50,22 @@ public class MainActivity extends AppCompatActivity {
         if(cbsuma.isChecked() == true){
             int resultado = num1 + num2;
             resul = "La suma es: "+resultado;
+            Toast.makeText(this, "Esta bien la suma.", Toast.LENGTH_SHORT).show();
+        }
+        if(cbresta.isChecked() == true){
+            int resultado = num1 - num2;
+            resul = resul +" / La resta"+resultado;
+        }
+        tvresultado.setText(resul);
+    }
+    private void now(){
+        int num1 = Integer.parseInt(etnum1.getText().toString());
+        int num2 = Integer.parseInt(etnum2.getText().toString());
+        String resul= null;
+        if(cbsuma.isChecked() == true){
+            int resultado = num1 + num2;
+            resul = "La suma es: "+resultado;
+            Toast.makeText(this, "Esta bien la suma.", Toast.LENGTH_SHORT).show();
         }
         if(cbresta.isChecked() == true){
             int resultado = num1 - num2;
